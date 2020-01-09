@@ -1,0 +1,25 @@
+{
+  "compilerOptions": { // Опции компилятора TS -> JS
+    "module": "commonjs", // Способ компиляции модулей (на выходе)
+    "target": "es2017", // В JS какого века компилировать
+    "lib": ["es2015"], // Какие библиотеки включать (тут есть async/await, например)
+    "moduleResolution": "node", // Формат модулей (на входе)
+    "esModuleInterop": true, // Можем импортировать модули CommonJS в соответствии со спецификацией модулей es6
+    "sourceMap": true, // Нужно ли юзать удобные для дебага source map'ы (да, нужно)
+    "outDir": "dist", // Куда выплевывать скомпиленный код
+    "baseUrl": ".", // Где сам проект находится
+    "noImplicitAny": true, // Any  не прокатит)
+    "allowJs": true, // Разрешить компиляцию файлов JavaScript.
+    "allowSyntheticDefaultImports": true, // Разрешить импорт по умолчанию из модулей без экспорта по умолчанию.
+    "experimentalDecorators": true, // Включает экспериментальную поддержку для ES-декораторов.
+    "resolveJsonModule": true, // Включите модули, импортированные с расширением .json.
+    "paths": {
+      "*": ["node_modules/*", "app/types/*"] // Где брать дополнительные типы
+    }
+  },
+  "include": ["app/**/*"], // Что именно компилировать
+  "exclude": [            // Что не компилировать
+    "node_modules",
+    "**/*.js"
+  ]
+}

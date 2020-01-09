@@ -1,0 +1,29 @@
+{
+  "name": "contact-keeper",
+  "version": "1.0.0",
+  "description": "contact manager",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "server": "nodemon dist/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^12.12.18",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.4",
+    "express": "^4.17.1",
+    "express-validator": "^6.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "concurrently": "^5.0.1",
+    "nodemon": "^2.0.2",
+    "tslint": "^5.20.1",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.7.3"
+  }
+}
